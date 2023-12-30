@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'articles#index'
+  get '/post', to: 'articles#new'
   # get 'article/index'
   # get 'article/show'
   # get 'article/new'
