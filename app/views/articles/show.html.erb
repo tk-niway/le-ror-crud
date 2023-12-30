@@ -15,7 +15,7 @@
         <div class="tag">test2</div>
       </div>
       <div class="button">
-        <a href="/articles/1/edit" class="edit-button">Edit</a>
+        <%= link_to "Edit", edit_article_path(@article), class:"edit-button" %>
         <a href="" class="delete-button">Delete</a>
       </div>
     </div>

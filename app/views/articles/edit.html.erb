@@ -2,16 +2,4 @@
 <p>Find me in app/views/articles/edit.html.erb</p> %>
 
 <h1>記事編集</h1>
-<div class="form-container">
-  <form action="/articles" method="post">
-    <div class="form-item">
-      <label for="title" class="form-label">タイトル</label>
-      <input type="text" name="title" placeholder="タイトル" class="form-input">
-    </div>
-    <div class="form-item">
-      <label for="body" class="form-label">本文</label>
-      <textarea name="body" rows="10" placeholder="記事を入力" class="form-input"></textarea>
-    </div>
-    <input type="submit" value="投稿" class="submit-button">
-  </form>
-</div>
+<%= render "form" %>
