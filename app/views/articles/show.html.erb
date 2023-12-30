@@ -1,16 +1,14 @@
 <%# <h1>Articles#show</h1>
 <p>Find me in app/views/articles/show.html.erb</p> %>
 
-<h1>タイトル</h1>
+<%= tag.h1 @article.title %>
 <div class="article-container">
   <div class="article">
     <div class="author">
       <p class="author-name">test user</p>
-      <p class="posted-date">2023/12/23</p>
+      <%= tag.p @article.created_at, class:"posted-date" %>
     </div>
-    <p class="article-body">
-            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <%= tag.p @article.body, class:"article-body" %>
     <div class="article-bottom">
       <div class="tags">
         <div class="tag">test1</div>
